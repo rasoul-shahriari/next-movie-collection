@@ -3,13 +3,13 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-    static getInitialProps(ctx) {
+    static async getInitialProps(ctx) {
         // Step 1: Create an instance of ServerStyleSheet
         const sheet = new ServerStyleSheet();
         // Step 2: Retrieve styles from components in the page
-        const page = ctx.renderPage((App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        );
+        // const page = ctx.renderPage((App) => (props) =>
+        //     sheet.collectStyles(<App {...props} />),
+        // );
 
         const initialProps = await Document.getInitialProps(ctx);
 
@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
             ...initialProps,
             styles: (
                 <>
-                    {page}
+                    {initialProps.styles}
                     {styleTags}
                 </>
             ),
