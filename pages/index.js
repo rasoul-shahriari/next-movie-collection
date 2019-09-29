@@ -1,19 +1,7 @@
-import Head from '@frontend/components/head';
-import styled from 'styled-components';
+const Homepage = () => (
+  <h1>Welcome to our website!</h1>
+);
 
-const StyledIndex = styled.div`
-  height: 20px;
-  background-color: red;
-  width: 100%;
-`;
-function App() {
-  return (
-    <>
-      <Head title="first try" />
-      <StyledIndex>33</StyledIndex>
-    </>
+Homepage.title = 'fuck I got';
 
-  )
-}
-
-export default App;
+export default Homepage;
