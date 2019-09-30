@@ -1,7 +1,7 @@
-const Portfolio = () => (
-    <h1>Portfolio</h1>
-);
+import React from 'react';
 
-Portfolio.title = "Portfolio";
+const Portfolio = () => <h1>Portfolio</h1>;
+
+Portfolio.title = 'Portfolio';
 
 export default Portfolio;
