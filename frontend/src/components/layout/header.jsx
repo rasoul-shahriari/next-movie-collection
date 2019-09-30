@@ -1,5 +1,4 @@
-import { Menu } from '@frontend/components/menu';
-import { Logo } from '@frontend/components/logo';
+import { Menu, Logo } from '@frontend/components/layout';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`

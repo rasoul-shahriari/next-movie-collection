@@ -1,5 +1,4 @@
-import { Header } from '@frontend/components/header';
-import { Footer } from '@frontend/components/footer';
+import { Header, Footer } from '@frontend/components/layout';
 
 import styled from 'styled-components';
 

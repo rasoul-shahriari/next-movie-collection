@@ -1,7 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
-
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
         // Step 1: Create an instance of ServerStyleSheet
