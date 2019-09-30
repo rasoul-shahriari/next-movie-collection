@@ -33,7 +33,7 @@ const StyledMenu = styled.ul`
             }
         }   
     }
-`
+`;
 
 export const Menu = () => (
     <StyledMenu>
