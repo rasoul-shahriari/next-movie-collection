@@ -4,7 +4,8 @@
   // fix: error: Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser
   "include": [
     "./**/*.ts",
-    "./**/*.tsx"
+    "./**/*.tsx",
+    "./**/*.js"
     // etc
   ],
   // IF (and only if) you have a mixed JS/TS codebase - you should also turn on JS support
